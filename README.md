@@ -3,7 +3,7 @@
 <https://pubmed.ncbi.nlm.nih.gov/21257350/>
 我们的主要任务是编辑main.py这个文件，也就是脚本文件。
 ##分型判断部分
-'''Python
+```python
 if is_genotype_exist(inputs, 'RS676785') and is_genotype_exist(inputs, 'RS609320'):
         rs676785 = inputs['RS676785']
         rs609320 = inputs['RS609320']
@@ -19,13 +19,13 @@ if is_genotype_exist(inputs, 'RS676785') and is_genotype_exist(inputs, 'RS609320
             result2 = 'e/e型'
         else:
             result2 = 'E/e型'
-'''
+```
 ##将结果转换成markdown表格形式并输出
-'''Python
+```python
 row1 = '|抗原类型|结果|'+'\n'
 row2 = '|:--------: | :--------: |'+'\n'
 row3 = '|C|'+result1+'|'+'\n'
 row4 = '|E|'+result2+'|'
 result = row1+row2+row3+row4
 print(result)
-'''
+```
